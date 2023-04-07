@@ -711,6 +711,13 @@ mark{
     font-size: 20px;
     color: white;
 }
+#lastp{
+    position: absolute;
+    top:830%;
+    left:40%;
+    font-size: 20px;
+    color: white;
+}
 
 /*--------------------------------------------------------------------------------------------*/
 .lastdiv{
