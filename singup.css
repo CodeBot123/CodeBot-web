@@ -1,0 +1,131 @@
+*{font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(17, 17, 50);
+}
+
+header{
+    background-color: rgb(11, 11, 25);
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+nav.navigation a{
+    color:white ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+nav a:hover{
+    color:	royalblue;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    left: 0;
+    bottom: 20px;
+    background:	royalblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+    
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.login{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    border: 0px solid  ;
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: 	royalblue;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+/*-------------------------------------main-----------------------------------*/
+main{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+#singup{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 40%;
+    border: 0px solid;
+    font-size: 50px;
+}
+
+.container{
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid white;
+    background-color: royalblue;
+    border-radius: 10px;
+}
+
+.alr{
+    font-size: 15px;
+    color: white;
+    
+}
+
+input{
+    margin: 5px 0px;
+    height: 35px;
+    padding: 7px;
+}
+
+button{
+    font-size: 20px;
+    height: 35px;
+    margin: 5px 0px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: rgb(17, 17, 50);
+}
+
+button:hover{
+    box-shadow: 0 0 10px blue;
+    background-color: rgb(17, 17, 50);
+    color: white;
+}

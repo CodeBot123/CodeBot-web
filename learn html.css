@@ -1,0 +1,746 @@
+*{font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(17, 17, 50);
+}
+
+header{
+    background-color: rgb(11, 11, 25);
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+nav.navigation a{
+    color:white ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+nav a:hover{
+    color:	royalblue;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    left: 0;
+    bottom: 20px;
+    background:	royalblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+    
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.login{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    border: 0px solid  ;
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: 	royalblue;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+/*--------------------------------------------main----------------------------*/
+
+main{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------------------------------------------------*/
+#html{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 100px;
+}
+#fullform{
+    position: absolute;
+    top:15%;
+    left:29%;
+    color: white;
+    font-size: 30px;
+}
+
+.whathtml{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 55%;
+}
+#whathtml{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#htmlimg{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+
+/*---------------------------------------------------------------------------*/
+#question1{
+    position: absolute;
+    top:100%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer1{
+    position: absolute;
+    top:110%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------------*/
+#sexample{
+    position: absolute;
+    top:150%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+.exhtmlbox{
+    position: absolute;
+    top: 160%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exhtml{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.whtml{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    background-color: rgb(17, 17, 50);
+}
+#htmlcode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*-----------------------------------------------------------------*/
+#question2{
+    position: absolute;
+    top:240%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer2{
+    position: absolute;
+    top:250%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+mark{
+   background-color: rgb(11, 11, 25);
+   color: rgb(232, 130, 130);;
+   font-size: 18px;
+}
+
+/*--------------------------------------------------------------------*/
+#question3{
+    position: absolute;
+    top:300%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#question3-1{
+    position: absolute;
+    top:310%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#question3-2{
+    position: absolute;
+    top:320%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#question3-3{
+    position: absolute;
+    top:330%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#question3-4{
+    position: absolute;
+    top:340%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#question3-5{
+    position: absolute;
+    top:350%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------------*/
+.showbox{
+    position: absolute;
+    top: 370%;
+    left: 10%;
+    width: 50%;
+    height: 20%;
+}
+.showbox1{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 25%;
+    color: white;
+}
+#sb1{
+    position: absolute;
+    left: 5%;
+    font-size: 25px;
+    color: white;
+}
+#sb1-2{
+    position: absolute;
+    left: 40%;
+    font-size: 25px;
+    color: white;
+}
+#sb1-3{
+    position: absolute;
+    left: 85%;
+    font-size: 25px;
+    color: white;
+}
+
+.showbox2{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(11, 11, 25);
+}
+#sb2{
+    position: absolute;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+#sb2-2{
+    position: absolute;
+    left: 40%;
+    font-size: 20px;
+    color: white;
+}
+#sb2-3{
+    position: absolute;
+    left: 85%;
+    font-size: 20px;
+    color: white;
+}
+
+.showbox3{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 25%;
+}
+#sb3{
+    position: absolute;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+#sb3-2{
+    position: absolute;
+    left: 40%;
+    font-size: 20px;
+    color: white;
+}
+#sb3-3{
+    position: absolute;
+    left: 85%;
+    font-size: 20px;
+    color: white;
+}
+
+.showbox4{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 25%;
+    background-color: rgb(11, 11, 25);
+}
+#sb4{
+    position: absolute;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+#sb4-2{
+    position: absolute;
+    left: 40%;
+    font-size: 20px;
+    color: white;
+}
+#sb4-3{
+    position: absolute;
+    left: 85%;
+    font-size: 20px;
+    color: white;
+}
+
+#note{
+    position: absolute;
+    top: 400%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+#question4{
+    position: absolute;
+    top:430%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#question4-1{
+    position: absolute;
+    top:440%;
+    left:10%;
+    color: white;
+    font-size: 18px;
+}
+#question4-2{
+    position: absolute;
+    top:445%;
+    left:10%;
+    color: white;
+    font-size: 18px;
+}
+#WebBrowsers-img{
+    position: absolute;
+    top:450%;
+    left:10%;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+#question5{
+    position: absolute;
+    top:530%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#question5-1{
+    position: absolute;
+    top:540%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.divhtml{
+    position: absolute;
+    top:550%;
+    left:10%;
+    width: 80%;
+    height: 90%;
+    border: 1px solid white;
+}
+#phtml{
+    position: absolute;
+    top:1%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+#phtmlend{
+    position: absolute;
+    top: 96%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divhead{
+    position: absolute;
+    top:7%;
+    left:4%;
+    width: 92%;
+    height: 30%;
+    border: 1px solid white;
+}
+#phead{
+    position: absolute;
+    top:1%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+#pheadend{
+    position: absolute;
+    top:85%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divtitle{
+    position: absolute;
+    top:40%;
+    left:4%;
+    width: 92%;
+    height: 20%;
+    border: 1px solid white;
+}
+#ptitle{
+    position: absolute;
+    top:20%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divbody{
+    position: absolute;
+    top:40%;
+    left:4%;
+    width: 92%;
+    height: 55%;
+    border: 1px solid white;
+}
+#pbody{
+    position: absolute;
+    top:1%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+#pbodyend{
+    position: absolute;
+    top:90%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divh1{
+    position: absolute;
+    top:20%;
+    left:4%;
+    width: 92%;
+    height: 15%;
+    border: 1px solid white;
+}
+#ph1{
+    position: absolute;
+    top:20%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divp{
+    position: absolute;
+    top:40%;
+    left:4%;
+    width: 92%;
+    height: 15%;
+    border: 1px solid white;
+}
+#pp{
+    position: absolute;
+    top:20%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+.divp2{
+    position: absolute;
+    top:60%;
+    left:4%;
+    width: 92%;
+    height: 15%;
+    border: 1px solid white;
+}
+#pp2{
+    position: absolute;
+    top:20%;
+    left:1%;
+    color: white;
+    font-size: 20px;
+}
+
+#note2{
+    position: absolute;
+    top: 650%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
+}
+
+/*----------------------------------------------------------------------------------------*/
+#question6{
+    position: absolute;
+    top:685%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#question6-2{
+    position: absolute;
+    top:695%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+#question6-3{
+    position: absolute;
+    top:715%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#Tim-Berners-Lee{
+    position: absolute;
+    top: 685%;
+    left: 70%;
+}
+#TimBerners-Lee{
+    position: absolute;
+    top:718%;
+    left:70%;
+    color: white;
+    font-size: 20px;
+}
+
+.year-versions{
+    position: absolute;
+    top:725%;
+    left:10%;
+    width: 80%;
+    height: 10%;
+}
+.versions1{
+    position: absolute;
+    top:735%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions2{
+    position: absolute;
+    top:740%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions3{
+    position: absolute;
+    top:745%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions4{
+    position: absolute;
+    top:750%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions5{
+    position: absolute;
+    top:755%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions6{
+    position: absolute;
+    top:760%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions7{
+    position: absolute;
+    top:765%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions8{
+    position: absolute;
+    top:770%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions9{
+    position: absolute;
+    top:775%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions10{
+    position: absolute;
+    top:780%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions11{
+    position: absolute;
+    top:785%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+.versions12{
+    position: absolute;
+    top:790%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+}
+.versions13{
+    position: absolute;
+    top:795%;
+    left:10%;
+    width: 80%;
+    height: 5%;
+    background-color: rgb(11, 11, 25);
+}
+
+#year-pversions{
+    position: absolute;
+    top: 10px;
+    left:5%;
+    font-size: 35px;
+    color: white;
+}
+#year-pversions2{
+    position: absolute;
+    top: 10px;
+    left:40%;
+    font-size: 35px;
+    color: white;
+}
+
+#pversions{
+    position: absolute;
+    left:5%;
+    font-size: 20px;
+    color: white;
+}
+#pversions2{
+    position: absolute;
+    left:40%;
+    font-size: 20px;
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.lastdiv{
+    position: absolute;
+    top:835%;
+    left: 0%;
+    width: 100%;
+    height: 30%;
+}
+
+.homepagebtn{
+    position: absolute;
+    top: 835%;
+    left: 43%;
+    border: 0px solid;
+}
+#homepage{
+    font-size: 20px;
+    font-weight: bold;
+    background:	royalblue;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#homepage:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}

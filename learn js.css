@@ -1,0 +1,493 @@
+*{font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(17, 17, 50);
+}
+
+header{
+    background-color: rgb(11, 11, 25);
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+nav.navigation a{
+    color:white ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+nav a:hover{
+    color:	royalblue;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    left: 0;
+    bottom: 20px;
+    background:	royalblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+    
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.login{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    border: 0px solid  ;
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: 	royalblue;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+/*--------------------------------------------main----------------------------*/
+
+main{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------------------------------------------------*/
+#js{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 100px;
+}
+
+.whatjs{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 55%;
+}
+#whatjs{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#jsimg{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+}
+
+/*---------------------------------------------------------------------------*/
+#question1{
+    position: absolute;
+    top:70%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer1{
+    position: absolute;
+    top:80%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer1-2{
+    position: absolute;
+    top:85%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(17, 17, 50);
+}
+#jscode{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    color: white;
+    font-size: 20px;
+}
+
+#break1{
+    position: absolute;
+    top: 130%;
+    left:15%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox2{
+    position: absolute;
+    top: 140%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs2{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs2{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(17, 17, 50);
+}
+#jscode2{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    color: white;
+    font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+#question2{
+    position: absolute;
+    top:180%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer2{
+    position: absolute;
+    top:190%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox3{
+    position: absolute;
+    top: 200%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs3{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs3{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    background-color: black;
+}
+.wjs3-1{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    background-color: white;
+}
+/*----------------------------------------------------------------------------------------------*/
+#question3{
+    position: absolute;
+    top:280%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer3{
+    position: absolute;
+    top:290%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox4{
+    position: absolute;
+    top: 300%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs4{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs4{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(17, 17, 50);
+}
+#jscode4{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    color: white;
+    font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+#question2{
+    position: absolute;
+    top:180%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer2{
+    position: absolute;
+    top:190%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox3{
+    position: absolute;
+    top: 200%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs3{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs3{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    background-color: white;
+}
+#jscode3{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 20px;
+}
+/*----------------------------------------------------------------------------------------------*/
+#question4{
+    position: absolute;
+    top:350%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer4{
+    position: absolute;
+    top:360%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.exjsbox5{
+    position: absolute;
+    top: 370%;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#exjs5{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wjs5{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    height: 60%;
+    background-color: rgb(17, 17, 50);
+}
+#jscode5{
+    position: absolute;
+    top: 25%;
+    left:5%;
+    color: white;
+    font-size: 20px;
+}
+
+/*---------------------------------------------------------------------------------*/
+#question5{
+    position: absolute;
+    top:405%;
+    left:15%;
+    color: white;
+    font-size: 30px;
+}
+#answer5{
+    position: absolute;
+    top:415%;
+    left:15%;
+    color: white;
+    font-size: 20px;
+}
+#answer5-2{
+    position: absolute;
+    top:420%;
+    left:15%;
+    color: white;
+    font-size: 20px;
+}
+#answer5-3{
+    position: absolute;
+    top:425%;
+    left:15%;
+    color: white;
+    font-size: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+#question6{
+    position: absolute;
+    top:450%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+.answer6{
+    position: absolute;
+    top: 460%;
+    left: 10%;
+    width: 55%;
+}
+#answer6{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#Brendan-Eich-img{
+    position: absolute;
+    top: 450%;
+    left: 70%;
+}
+#Brendan-Eich{
+    position: absolute;
+    top: 482%;
+    left: 70%;
+    color: white;
+    font-size: 20px;
+}
+/*--------------------------------------------------------------------------------------------*/
+.lastdiv{
+    position: absolute;
+    top:482%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.homepagebtn{
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    border: 0px solid;
+}
+#homepage{
+    font-size: 20px;
+    font-weight: bold;
+    background:	royalblue;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#homepage:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}

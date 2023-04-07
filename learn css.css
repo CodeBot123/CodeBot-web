@@ -1,0 +1,330 @@
+*{font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(17, 17, 50);
+}
+
+header{
+    background-color: rgb(11, 11, 25);
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+nav.navigation a{
+    color:white ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+nav a:hover{
+    color:	royalblue;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    left: 0;
+    bottom: 20px;
+    background:	royalblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+    
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.login{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    border: 0px solid  ;
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: 	royalblue;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+/*--------------------------------------------main----------------------------*/
+main{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+
+
+#css{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 100px;
+}
+#fullform{
+    position: absolute;
+    top:15%;
+    left:29%;
+    color: white;
+    font-size: 30px;
+}
+
+.whatcss{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 55%;
+}
+#whatcss{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#cssimg{
+    position: absolute;
+    top: 20%;
+    left: 75%;
+}
+
+/*---------------------------------------------------------------------------*/
+#question1{
+    position: absolute;
+    top:70%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer1{
+    position: absolute;
+    top:80%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------------------*/
+#question2{
+    position: absolute;
+    top:110%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer2{
+    position: absolute;
+    top:120%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+.excssbox{
+    position: absolute;
+    top: 130%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+    background-color: rgb(11, 11, 25);
+}
+#excss{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 25px;
+}
+.wcss{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 75%;
+    background-color: rgb(17, 17, 50);
+}
+#csscode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*-----------------------------------------------------------------*/
+#question3{
+    position: absolute;
+    top:210%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer3-2{
+    position: absolute;
+    top:220%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer3-3{
+    position: absolute;
+    top:230%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer3-4{
+    position: absolute;
+    top:235%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}#answer3-5{
+    position: absolute;
+    top:240%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer3-6{
+    position: absolute;
+    top:250%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer3-7{
+    position: absolute;
+    top:265%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer3-8{
+    position: absolute;
+    top:275%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+#ifhtml{
+    position: absolute;
+    top:290%;
+    left:30%;
+    color: white;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------------------*/
+#question4{
+    position: absolute;
+    top:310%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer4-2{
+    position: absolute;
+    top:320%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#answer4-3{
+    position: absolute;
+    top:330%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------------------*/
+#question5{
+    position: absolute;
+    top:350%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+}
+#answer5{
+    position: absolute;
+    top:360%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#Håkon-Wium-Lieimg{
+    position: absolute;
+    top: 350%;
+    left: 70%;
+}
+#Håkon-Wium-Lie{
+    position: absolute;
+    top:382%;
+    left:70%;
+    color: white;
+    font-size: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+.lastdiv{
+    position: absolute;
+    top:365%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+}
+
+.homepagebtn{
+    position: absolute;
+    top: 400%;
+    left: 43%;
+    border: 0px solid;
+}
+#homepage{
+    font-size: 20px;
+    font-weight: bold;
+    background:	royalblue;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#homepage:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}

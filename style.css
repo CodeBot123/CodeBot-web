@@ -1,0 +1,543 @@
+*{font-family: calibri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(17, 17, 50);
+}
+
+header{
+    background-color: rgb(11, 11, 25);
+    width: 100%;
+    height: 14%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+nav.navigation a{
+    color:white ;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+nav a:hover{
+    color:	royalblue;
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px; 
+    left: 0;
+    bottom: 20px;
+    background:	royalblue;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+    
+nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.login{
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    border: 0px solid  ;
+}
+#btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: 	royalblue;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+/*--------------------------------------------main----------------------------*/
+main{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 100%;
+}
+
+#welcome{
+    position: absolute;
+    top: 100px;
+    left:30%;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+#exp{
+    position: absolute;
+    top: 180px;
+    left: 31%;
+    color: white;
+    text-align: center;
+    font-size: 20px; 
+}
+
+/*------------------------------------------html-box--------------------------*/
+.boxhtml{
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 450px;
+    background-color: orangered;
+}
+.exhtmlbox{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 50);
+}
+.whtml{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(11, 11, 25);
+}
+.learnhtmlbox{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(17, 17, 50);
+    border-radius: 10px;
+}
+
+#exhtml{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 25px;
+}
+#html{
+    position: absolute;
+    top: 10%;
+    left:13%;
+    color: white;
+    font-size: 100px;
+}
+#htmlexp{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#learnhtml{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left:15%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#htmlcode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*------------------------------------------css-box--------------------------*/
+.boxcss{
+    position: absolute;
+    top: 950px;
+    width: 100%;
+    height: 450px;
+    background-color: DodgerBlue;
+}
+.excssbox{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 50);
+
+}
+.wcss{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(11, 11, 25);
+}
+.learncssbox{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(17, 17, 50);
+    border-radius: 10px;
+}
+
+
+#excss{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 25px;
+}
+#css{
+    position: absolute;
+    top: 10%;
+    left:15%;
+    color: white;
+    font-size: 100px;
+}
+#cssexp{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#learncss{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left:20%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#csscode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*------------------------------------------js-box--------------------------*/
+.boxjs{
+    position: absolute;
+    top: 1400px;
+    width: 100%;
+    height: 450px;
+    background-color: gold;
+}
+.exjsbox{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 50);
+
+}
+.wjs{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(11, 11, 25);
+}
+.learnjsbox{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 15%;
+    height: 10%;
+    background-color: rgb(17, 17, 50);
+    border-radius: 10px;
+}
+
+
+#exjs{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 25px;
+}
+#js{
+    position: absolute;
+    top: 10%;
+    left:10%;
+    color: white;
+    font-size: 100px;
+}
+#jsexp{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#learnjs{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left:20%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#jscode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*------------------------------------------python---------------------------------*/
+.boxpython{
+    position: absolute;
+    top: 1850px;
+    width: 100%;
+    height: 450px;
+    background-color: royalblue;
+}
+.expythonbox{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 50);
+}
+.wpython{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(11, 11, 25);
+}
+.learnpythonbox{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 15%;
+    height: 10%;
+    background-color: rgb(17, 17, 50);
+    border-radius: 10px;
+}
+
+
+#expython{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 25px;
+}
+#python{
+    position: absolute;
+    top: 10%;
+    left:13%;
+    color: white;
+    font-size: 100px;
+}
+#pythonexp{
+    position: absolute;
+    top: 40%;
+    left:13%;
+    color: white;
+    font-size: 20px;
+}
+#learnpython{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left:20%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#pythoncode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*------------------------------------------sql---------------------------------*/
+.boxsql{
+    position: absolute;
+    top: 2300px;
+    width: 100%;
+    height: 450px;
+    background-color: brown;
+}
+.exsqlbox{
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 50);
+
+}
+.wsql{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    background-color: rgb(11, 11, 25);
+}
+.learnsqlbox{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    width: 10%;
+    height: 10%;
+    background-color: rgb(17, 17, 50);
+    border-radius: 10px;
+}
+
+
+#exsql{
+    position: absolute;
+    top: 5%;
+    left:10%;
+    color: white;
+    font-size: 25px;
+}
+#sql{
+    position: absolute;
+    top: 10%;
+    left:15%;
+    color: white;
+    font-size: 100px;
+}
+#sqlexp{
+    position: absolute;
+    top: 40%;
+    left:10%;
+    color: white;
+    font-size: 20px;
+}
+#learnsql{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left:20%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#sqlcode{
+    position: absolute;
+    top: 5%;
+    left:5%;
+    color: white;
+    font-size: 17px;
+}
+
+/*--------------------------------------------------footer--------------------------------------------------*/
+.learnmorebox{
+    position: absolute;
+    top: 2750px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(17, 17, 50);
+}
+#learnmoreexp{
+    position: absolute;
+    top: 20%;
+    left:23%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.learnmorebtn{
+    position: absolute;
+    top: 60%;
+    left: 43%;
+    border: 0px solid;
+}
+#learnmore{
+    font-size: 30px;
+    font-weight: bold;
+    background:	royalblue;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#learnmore:hover{
+    box-shadow: 0 0 10px blue;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
